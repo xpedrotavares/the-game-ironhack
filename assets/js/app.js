@@ -6,7 +6,7 @@ const ctx = canvas.getContext("2d");
 let player;
 let gravity;
 let keys = {};
-let obstacles = [];
+let steps;
 
 // fazer os isteners
 document.addEventListener("keydown", function (evt) {
@@ -15,6 +15,22 @@ document.addEventListener("keydown", function (evt) {
 document.addEventListener("keyup", function (evt) {
   keys[evt.code] = false;
 });
+
+class Steps {
+  constructor(x, y, w, h, c) {
+    this.x = x;
+    this.y = y;
+    this.w = w;
+    this.h = h;
+    this.c = c;
+
+  
+    this.originalHeight = h;
+    
+  }
+}
+
+
 
 class Player {
   constructor(x, y, w, h, c) {
@@ -89,14 +105,14 @@ function Start() {
   gravity = 1;
 
   player = new Player(25, 0, 50, 50, "#FF5858");
-
+  
   requestAnimationFrame(Update);
 }
 
 function Update() {
   requestAnimationFrame(Update);
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-
+  
   player.Animate();
 }
 
