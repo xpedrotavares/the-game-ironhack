@@ -37,7 +37,7 @@ class Player {
     
 
     this.img = new Image()
-    this.img.src = './assets/images/dino01.jpg'
+    this.img.src = '/assets/images/kisspng-tyrannosaurus-t-shirt-dino-t-rex-runner-2-lonely-t-8-bit-5ac1f4e6ee15e6.3215979715226605829752.png'
     
     this.dy = 0;
     this.jumpForce = 15;
@@ -96,12 +96,14 @@ class Player {
 }
 
 class Obstacle {
-  constructor (x, y, w, h, c) {
+  constructor (x, y, w, h) {
     this.x = x;
     this.y = y;
     this.w = w;
     this.h = h;
-    this.c = c;
+    this.img = new Image()
+    this.img.src = '/assets/images/Daco_6127748.png'
+     
 
     this.dx = -gameSpeed;
   }
@@ -113,10 +115,12 @@ class Obstacle {
   }
 
   Draw () {
-    ctx.beginPath();
-    ctx.fillStyle = this.c;
-    ctx.fillRect(this.x, this.y, this.w, this.h);
-    ctx.closePath();
+
+    ctx.drawImage(this.img, this.x, this.y, this.w, this.h);
+    // ctx.beginPath();
+    // ctx.fillStyle = this.c;
+    // ctx.fillRect(this.x, this.y, this.w, this.h);
+    // ctx.closePath();
   }
 }
 
@@ -159,8 +163,8 @@ function RandomIntInRange (min, max) {
 }
 
 function Start () {
-  canvas.width = 700;
-  canvas.height = 700;
+  canvas.width = 900;
+  canvas.height = 400;
 
   ctx.font = "20px sans-serif";
 
