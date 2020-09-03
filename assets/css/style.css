@@ -18,6 +18,10 @@ canvas{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(/assets/images/browser-illustation_png-02.png);
+    background-size: cover;
+    padding-top: 100px;
+    padding-right: 30px;
 }
 #canvas{
     
