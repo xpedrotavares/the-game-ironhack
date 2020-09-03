@@ -20,6 +20,11 @@ let keys = {};
 // let frame = ;
 
 // fazer os listeners
+// let start = document.getElementById('start');
+// start.addEventListener(onclick('start'), function (evt) {
+//   star
+// })
+
 document.addEventListener('keydown', function (evt) {
   keys[evt.code] = true;
 });
@@ -162,9 +167,9 @@ function RandomIntInRange (min, max) {
   return Math.round(Math.random() * (max - min) + min);
 }
 
-function Start () {
-  canvas.width = 900;
-  canvas.height = 400;
+function Start() {
+  canvas.width = 905;
+  canvas.height = 404;
 
   ctx.font = "20px sans-serif";
 
