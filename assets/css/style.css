@@ -4,5 +4,15 @@
     box-sizing: border-box;
 }
 canvas{
-    display: block;
+    
+    /* width: 500px;
+    height: 600px; */
+    background-color: antiquewhite;
+    
 }
+
+    body{
+     display: flex;
+    justify-content: center;
+    align-content: center;
+} 
