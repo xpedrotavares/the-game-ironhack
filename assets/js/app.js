@@ -42,7 +42,7 @@ window.onload = function () {
       
   
       this.img = new Image()
-      this.img.src = "../../assets/images/dino.png"
+      this.img.src = "../../assets/images/Dino.png"
       
       this.dy = 0;
       this.jumpForce = 8;
@@ -107,7 +107,7 @@ window.onload = function () {
       this.w = w;
       this.h = h;
       this.img = new Image()
-      this.img.src = "../../assets/images/rocks.png"
+      this.img.src = "../../assets/images/Rocks.png"
        
   
       this.dx = -gameSpeed;
