@@ -42,7 +42,7 @@ window.onload = function () {
       
   
       this.img = new Image()
-      this.img.src = '/assets/images/kisspng-tyrannosaurus-t-shirt-dino-t-rex-runner-2-lonely-t-8-bit-5ac1f4e6ee15e6.3215979715226605829752.png'
+      this.img.src = "../../assets/images/dino.png"
       
       this.dy = 0;
       this.jumpForce = 8;
@@ -107,7 +107,7 @@ window.onload = function () {
       this.w = w;
       this.h = h;
       this.img = new Image()
-      this.img.src = '/assets/images/Daco_6127748.png'
+      this.img.src = "../../assets/images/rocks.png"
        
   
       this.dx = -gameSpeed;
@@ -200,7 +200,7 @@ window.onload = function () {
     spawnTimer--;
     if (spawnTimer <= 0) {
       SpawnObstacle();
-      console.log(obstacles);
+      
       spawnTimer = initialSpawnTimer - gameSpeed * 8;
       
       if (spawnTimer < 60) {
