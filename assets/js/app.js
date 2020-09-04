@@ -42,7 +42,7 @@ window.onload = function () {
       
   
       this.img = new Image()
-      this.img.src = "../../assets/images/dino.png"
+      this.img.src = "../assets/images/dino.png"
       
       this.dy = 0;
       this.jumpForce = 8;
