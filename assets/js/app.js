@@ -42,7 +42,7 @@ class Player {
     
 
     this.img = new Image()
-    this.img.src = '/assets/images/kisspng-tyrannosaurus-t-shirt-dino-t-rex-runner-2-lonely-t-8-bit-5ac1f4e6ee15e6.3215979715226605829752.png'
+    this.img.src = './assets/images/kisspng-tyrannosaurus-t-shirt-dino-t-rex-runner-2-lonely-t-8-bit-5ac1f4e6ee15e6.3215979715226605829752.png'
     
     this.dy = 0;
     this.jumpForce = 8;
@@ -107,7 +107,7 @@ class Obstacle {
     this.w = w;
     this.h = h;
     this.img = new Image()
-    this.img.src = '/assets/images/Daco_6127748.png'
+    this.img.src = './assets/images/Daco_6127748.png'
      
 
     this.dx = -gameSpeed;
