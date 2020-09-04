@@ -45,7 +45,7 @@ class Player {
     this.img.src = '/assets/images/kisspng-tyrannosaurus-t-shirt-dino-t-rex-runner-2-lonely-t-8-bit-5ac1f4e6ee15e6.3215979715226605829752.png'
     
     this.dy = 0;
-    this.jumpForce = 15;
+    this.jumpForce = 8;
     this.originalHeight = h;
     this.grounded = false;
     this.jumpTimer = 0;
@@ -182,7 +182,7 @@ function Start() {
     highscore = localStorage.getItem('highscore');
   }
 
-  player = new Player(25, 0, 50, 50);
+  player = new Player(80, 0, 50, 50);
 
   scoreText = new Text("Score: " + score, 25, 25, "left", "#212121", "20");
   highscoreText = new Text("Highscore: " + highscore, canvas.width - 25, 25, "right", "#212121", "20");
